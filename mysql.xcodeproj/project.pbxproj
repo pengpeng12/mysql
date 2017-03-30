@@ -16,6 +16,7 @@
 		184800DA1E8CF6800021C182 /* mysqlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184800D91E8CF6800021C182 /* mysqlTests.m */; };
 		184800E51E8CF6800021C182 /* mysqlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184800E41E8CF6800021C182 /* mysqlUITests.m */; };
 		184800F31E8CF78B0021C182 /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = 184800F21E8CF78B0021C182 /* sql.txt */; };
+		184800F51E8D0A7B0021C182 /* sql_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 184800F41E8D0A7B0021C182 /* sql_2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		184800E01E8CF6800021C182 /* mysqlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mysqlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184800E41E8CF6800021C182 /* mysqlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mysqlUITests.m; sourceTree = "<group>"; };
 		184800E61E8CF6800021C182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		184800F21E8CF78B0021C182 /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
+		184800F21E8CF78B0021C182 /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
+		184800F41E8D0A7B0021C182 /* sql_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql_2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				184800C51E8CF6800021C182 /* ViewController.h */,
 				184800C61E8CF6800021C182 /* ViewController.m */,
 				184800F21E8CF78B0021C182 /* sql.txt */,
+				184800F41E8D0A7B0021C182 /* sql_2.txt */,
 				184800C81E8CF6800021C182 /* Main.storyboard */,
 				184800CB1E8CF6800021C182 /* Assets.xcassets */,
 				184800CD1E8CF6800021C182 /* LaunchScreen.storyboard */,
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184800CF1E8CF6800021C182 /* LaunchScreen.storyboard in Resources */,
+				184800F51E8D0A7B0021C182 /* sql_2.txt in Resources */,
 				184800F31E8CF78B0021C182 /* sql.txt in Resources */,
 				184800CC1E8CF6800021C182 /* Assets.xcassets in Resources */,
 				184800CA1E8CF6800021C182 /* Main.storyboard in Resources */,

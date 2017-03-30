@@ -1,0 +1,1215 @@
+//1
+select * from need_repair1_vr where mc='选择'; 
+
+select * from need_repair1_vr where mc='海峡新干线';
+update need_repair1_vr set 
+pdt_com='福建省广播影视集团',
+is_net=0,
+weibo_id='http://weibo.com/hxxgx' ,
+baike_id='http://baike.baidu.com/item/海峡新干线?sefr=sebtn'
+where mc='海峡新干线';
+
+select * from need_repair1_vr where mc like '%跨时代战书%';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=yIaVW-ZOmLPGJvyFqkHOU7JdpbnDNW3esm4U9KDDvXSMclNDa7l-IK_fd8q8h4XxhbpqkM7WS1BUiyfOAlp8YxVFSiFT5lUUkd_kBmwQ1oz5pxLSwxbAE7aWM94QnZkdqYQOPznhOs3FZMjjwn6iT_' 
+where mc='跨时代战书';
+
+select * from need_repair1_vr where mc like '%文化之约%';
+update need_repair1_vr set
+hosts='邱晓雨'
+where mc='文化之约';
+
+select * from need_repair1_vr where mc like '%第三调解室%';
+update need_repair1_vr set
+channel='北京卫视',
+baike_id='http://baike.baidu.com/link?url=S_8SBRC4bufB3nEf9LH1SsAgRHq8h0wQZ8_-z1xDKfxUMyW4bBi21bBeS5LbG6VhB9VPG4L0_16STwITUc06pkGKOAdjNjL4iVQynC8pXD3aBdF1muLXKejxnyuaPQmsdLozPafwvheuGVi4BhEcTa',
+douban_id='https://movie.douban.com/subject/26654171/',
+is_net=0
+where mc like '%第三调解室%';
+
+select * from need_repair1_vr where mc like '%歌从黄河来%';
+update need_repair1_vr set
+weibo_id='http://weibo.com/sxtvlovesong?is_hot=1',
+baike_id='http://baike.baidu.com/link?url=lfr4DFTp-YbDyFeHCqKd6GoIH7Idn_th34yiHeeCxDMaHPP2n7JPq8lZTyqJY4unTcEOrPLJOOt3mazIbgnAAI6ITNwJSG1FpCZT1Pq2rYFWGELPnjUodHF9QJ5ar7EMatv7tey1Wo_7AOI2jQcSqq'
+where mc like '%歌从黄河来%';
+
+select * from need_repair1_vr where mc like '%闪亮的爸爸%';
+update need_repair1_vr set
+weibo_id='http://weibo.com/sztvsldbb?is_hot=1',
+baike_id='http://baike.baidu.com/link?url=N2dW_oVkrkHpRbWYIkpEGTokJjBiLATj9TfJMONhMwth702CZrHABUNv5b5z1QJyzX-4JBbi2e4OJYbDz7MYPImdQ4AdzGs4xDesLWlwP6qd0IDxPZTiHbfk0cxrqQiGdBzsrLfVmDT4gYwGiKcaGD_CtAnRKtI3cUmlC9SbwnZgyEoakhCf4mEaAkx92XTm'
+where mc like '%闪亮的爸爸%';
+
+select * from need_repair1_vr where mc like '%今日印象%';
+update need_repair1_vr set 
+hosts='张婕',
+weibo_id='http://weibo.com/u/1836175780',
+baike_id='http://baike.baidu.com/link?url=X3h-ANWe77tymW7kpG_Ffn3TqbeyqoZfBg3GmySR_-FsGQeFXUQdFyUih8P9Oa6UJzz0GjAzf3NOn_l3NadsawKvZHzCu5298MsyCHZKmvRvClWeUz5S5a4QYcOdVSf_',
+douban_id='https://movie.douban.com/subject/26752691/'
+where mc='今日印象';
+update need_repair1_vr set channel='上海电视台星尚频道' where mc='今日印象';
+
+
+select * from need_repair1_vr where mc like '%娘家姐妹花%';
+update need_repair1_vr set channel='辽宁卫视' where mc='娘家姐妹花';
+
+
+select * from need_repair1_vr where mc like '%温暖在身边%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/2924418223',
+baike_id='http://baike.baidu.com/link?url=uI5PIPrACNOibg6APyqeeDXl_E9H5auWSw4_JBzd-pSxPOVjTCmlVAqpdhsLvNcaHR-yxxE26IFprMO4aEVlA9WJMYdyzjhudM0eyybd6878Sx0DaaNIRUWBZxqz-1BuYiFP-6aLWhZ6SdkTNUYrYa'
+where mc='温暖在身边';
+
+select * from need_repair1_vr where mc like '%故事中国%';
+update need_repair1_vr set 
+douban_id='https://movie.douban.com/subject/26301575/',
+baike_id='http://baike.baidu.com/item/%E6%95%85%E4%BA%8B%E4%B8%AD%E5%9B%BD/4027677'
+where mc='故事中国';
+
+select * from need_repair1_vr where mc like '%潮童天下%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/chaotongtianxia?is_all=1',
+douban_id='https://movie.douban.com/subject/26183951/',
+baike_id='http://baike.baidu.com/item/%E6%BD%AE%E7%AB%A5%E5%A4%A9%E4%B8%8B/5458124?sefr=cr'
+where mc='潮童天下';
+
+select * from need_repair1_vr where mc like '%双城记%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/shuangchengji?is_hot=1',
+baike_id='http://baike.baidu.com/item/%E5%8F%8C%E5%9F%8E%E8%AE%B0/2229604'
+where mc='双城记';
+
+select * from need_repair1_vr where mc='国际时尚汇';
+update need_repair1_vr set 
+pdt_com='北京索锐影视传媒有限公司',channel='全国120多家地面电视台', is_net=0 where mc='国际时尚汇';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/item/国际时尚汇?sefr=sebtn'
+where mc='国际时尚汇';
+
+select * from need_repair1_vr where mc='黄河歌王争霸赛';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=BJsyqW1KD3beeD0pyjKGY55vvM0-ar0RsAclQ0quNA1yXLGuqEhl2EHk8QztGceNhXpRS1Z4LjuQjnGyAXf-bh90hnph30cS0wklQh3Iy8Cup7O-iMJBevw5lNtQver0odafC8s_7dlV4aZjwJQ6qwBrXz1p5ocfqAzg60oKfla'
+where mc='黄河歌王争霸赛';
+
+select * from need_repair1_vr where mc='家有好大事';
+update need_repair1_vr set 
+type='调解',
+is_net=0
+where mc='家有好大事';
+
+select * from need_repair1_vr where mc='芝麻开门';
+
+select * from need_repair1_vr where mc='哎呦，你真美';
+
+select * from need_repair1_vr where mc='时尚中国';
+update need_repair1_vr set 
+channel='广西卫视',
+is_net=0,
+weibo_id='http://weibo.com/fashionchina2003',
+baike_id='http://baike.baidu.com/link?url=Ev5BNMNc8tL5wg9xbQeCYrokISVxWzlPMP-h0hKvEUx9rc2stYCi_6rDZoMvipzIWSvoGHBOr9vXEOO2BXRoWHhqDJqUXVI1t5DAJMOhwpw5bS2ZgDtXto9lOAUdjEYR'
+where mc='时尚中国';
+
+select * from need_repair1_vr where mc='每日新闻报';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/2535760180?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E6%AF%8F%E6%97%A5%E6%96%B0%E9%97%BB%E6%8A%A5&is_hot=1',
+baike_id='http://baike.baidu.com/link?url=-c1HgDCxn35k9z9w0ZGnk21OoYQKkhvvHn4q8xQ1yagRe89UmarXe2rJwhO0R5GWr5le-AeKlyCvxyfP3ZwB8IBX5EeyM1I3Kb22LB5DgZwI0_cXHjnn5O9ZALfC52wJ4PLRn3bmWbcf0c8wkHwWQK'
+where mc='每日新闻报';
+
+select * from need_repair1_vr where mc like '%非常帮助%';
+update need_repair1_vr set
+pdt_com='河北电视台农民频道',
+baike_id='http://baike.baidu.com/item/%E9%9D%9E%E5%B8%B8%E5%B8%AE%E5%8A%A9?sefr=cr',
+is_net=0
+where mc like '%非常帮助%';
+
+select * from need_repair1_vr where mc like '%社会传真%';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/u/3912577115?is_all=1',
+baike_id='http://baike.baidu.com/link?url=G28rogzSD55oMZcIKlfpa2tdh01pZDNumbZ6ExMDnIWgk60Wy5fziRg0CzJs-qMzhZ7iFCgy7UH8Cu0_XvSlP2Ci6iCswkiv1Agol4bZvRnt68EpluAIyY1o7eGSvS4B'
+where mc='社会传真';
+
+select * from need_repair1_vr where mc='幸福在哪里';
+update need_repair1_vr set 
+pdt_com='四川广播电视台',
+area='内地',
+hosts='丁当|万喜|闵天浩', 
+baike_id='http://baike.baidu.com/item/%E5%B9%B8%E7%A6%8F%E5%9C%A8%E5%93%AA%E9%87%8C/16946101',
+weibo_id='http://weibo.com/sctvxingfuzainali?is_all=1',
+is_net=0 
+where mc='幸福在哪里';
+
+select * from need_repair1_vr where mc='综艺大爆炸';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/u/5069829477'
+where mc='综艺大爆炸';
+
+select * from need_repair1_vr where mc='相约星期六';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/xiangyue6?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E7%9B%B8%E7%BA%A6%E6%98%9F%E6%9C%9F%E5%85%AD',
+baike_id='http://baike.baidu.com/link?url=K989yxHkhbJslbgXyWsHjZDuDyCpw5-haagaI7pgTMjyKOpO7jmgXTYNYcO7zb5trNOkT1KsU-tyVobrPdMSdUNeqV4FDfJT2kM4DgmzlYMJJYS2u2VcTvJClN_Ej__ccmd1ejYV_4N6aGX08128ba',
+douban_id='https://movie.douban.com/subject/25964240/'
+where mc='相约星期六';
+
+select * from need_repair1_vr where mc like '%万家灯火%';
+update need_repair1_vr set
+type='健康|生活|医学|科学',
+is_net=0,
+weibo_id='http://weibo.com/jsbcwjdh?is_all=1',
+baike_id='http://baike.baidu.com/item/万家灯火/4893053?sefr=cr'
+where mc like '%万家灯火%';
+
+select * from need_repair1_vr where mc='北京卫视养生堂';
+update need_repair1_vr set douban_id='https://movie.douban.com/subject/26415301/' where mc='北京卫视养生堂';
+update need_repair1_vr set hosts='刘洪悦|刘婧',pdt_com='北京卫视',
+area='内地',
+weibo_id='http://weibo.com/btvyst',
+baike_id='http://baike.baidu.com/item/%E5%85%BB%E7%94%9F%E5%A0%82/2619736?sefr=cr',
+douban_id='https://movie.douban.com/subject/26415301/'
+where mc='北京卫视养生堂';
+
+select * from need_repair1_vr where mc='养生堂';
+update need_repair1_vr set hosts='刘洪悦|刘婧',pdt_com='北京卫视',
+is_net=0,
+channel='BTV科教',
+weibo_id='http://weibo.com/btvyst',
+baike_id='http://baike.baidu.com/item/%E5%85%BB%E7%94%9F%E5%A0%82/2619736?sefr=cr',
+douban_id='https://movie.douban.com/subject/26415301/'
+where mc='养生堂';
+
+
+select * from need_repair1_vr where mc like'欢乐集结号%';
+update need_repair1_vr set 
+type='娱乐|资讯',
+area='内地',
+is_net=0,
+pdt_com='辽宁电视台',
+weibo_id='http://weibo.com/huanlejijiehao',
+baike_id='http://baike.baidu.com/item/%E6%AC%A2%E4%B9%90%E9%9B%86%E7%BB%93%E5%8F%B7?fr=aladdin',
+douban_id='https://movie.douban.com/subject/26601297/'
+where mc like '欢乐集结号%';
+
+select * from need_repair1_vr where mc='春妮的周末时光';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/2851274495',
+baike_id='http://baike.baidu.com/item/%E6%98%A5%E5%A6%AE%E7%9A%84%E5%91%A8%E6%9C%AB%E6%97%B6%E5%85%89?sefr=cr'
+where mc='春妮的周末时光';
+
+select * from need_repair1_vr where mc='你看谁来了';
+update need_repair1_vr set 
+baike_id='http://baike.sogou.com/v164205798.htm?cid=qqshipin.tz'
+where mc='你看谁来了';
+
+select * from need_repair1_vr where mc = '传奇';
+update need_repair1_vr set 
+is_net=0,
+channel='上海纪实频道',
+baike_id='http://baike.baidu.com/item/%E4%BC%A0%E5%A5%87/3644395'
+where mc='传奇';
+
+select * from need_repair1_vr where mc = '可凡倾听';
+update need_repair1_vr set 
+is_net=0,
+pdt_com='上海文广新闻传媒集团(SMG)',
+weibo_id='http://weibo.com/kefanqingting?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E5%8F%AF%E5%87%A1%E5%80%BE%E5%90%AC&is_all=1',
+baike_id='http://baike.baidu.com/link?url=OaUZ42y7l_RpdBwOL1vqqnsBKQnUovevgTgP4ogJAgND9tN1Shb0X2noEa940VAWXIlE7AKH5Rs-M5LYEwhTtPvEGkcUwEmp6A7m3ok5EZQjas8j-Z2D4dklwLLmaxus',
+douban_id='https://movie.douban.com/subject/26612061/'
+where mc='可凡倾听';
+
+
+select * from need_repair1_vr where mc = '马兰花开';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/2715786042?nick=%E9%A9%AC%E5%85%B0%E8%8A%B1%E5%BC%80%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86',
+baike_id='http://baike.baidu.com/item/%E9%A9%AC%E5%85%B0%E8%8A%B1%E5%BC%80/12008770',
+douban_id='https://movie.douban.com/subject/26665856/'
+where mc='马兰花开';
+
+
+select * from need_repair1_vr where mc = '粤唱粤好戏';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/tvsycyhx',
+baike_id='http://baike.baidu.com/link?url=ir27JxYtAFE4d6Gqt86ZblM95lNgWDZWcgujNOzYPfTa1yaU_R3RPnf7mbVFzWplbTzquem4_HxS789hEbsjnLj9OkZzXoDFerjhXk2a2mVpqRwTp8udqgfkYJvVSpddkgTVXt2tFg7OSl1A8JjCR_'
+where mc='粤唱粤好戏';
+
+select * from need_repair1_vr where mc = '龙斗';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=Tb6mxEUZNEKXlGePFDzA8P1f04cceHJ0fXk08mKJe0QBz_ChjlqxM8kPh01bdOdxgMmH5CO2YBDtYhju4kf8Aer7C3vjoEYWnZQaUHFNwvy'
+where mc='龙斗';
+
+select * from need_repair1_vr where mc = '我们的歌手';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=0vUuLihw57fYoSWZZ9rs97rx7fOqM8kqUwtcrZJb7yTvUKqGvKP44SbylqxAL5E4HR0_484KRFKOWtW-ZhuKKmOoA86p_Dplvt0r0EZfhpRm3eJo-QYrne2DwtNvRQATKSC5cWfKtWt5sCMBZhIUgq'
+where mc='我们的歌手';
+
+select * from need_repair1_vr where mc = '极速奔跑吧';
+update need_repair1_vr set
+is_net=1,
+channel='乐视'
+where mc = '极速奔跑吧';
+
+
+select * from need_repair1_vr where mc like '%非诚勿扰%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/jswsfcwr?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E9%9D%9E%E8%AF%9A%E5%8B%BF%E6%89%B0',
+baike_id='http://baike.baidu.com/item/%E9%9D%9E%E8%AF%9A%E5%8B%BF%E6%89%B0/157'
+where mc='非诚勿扰';
+
+
+select * from need_repair1_vr where mc = '一周娱乐圈';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=Oh-k-txedpDmMEclrSGLt5kAB7blkwi48SO4rEI31ni7n6SWnVAovOIM8z0weUK24Vlbb0xA9WCUjZ98JzSGbNapDeAbY2z2f21iKwOmGIskhlbQuv5FXYMsCdo6cUN5z7JcBIFRonpRRvib9B2jSq'
+where mc='一周娱乐圈';
+
+select * from need_repair1_vr where mc = '武林风';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/1935496415?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E6%AD%A6%E6%9E%97%E9%A3%8E&is_hot=1',
+baike_id='http://baike.baidu.com/link?url=Oiok2P5rK-QitQMkyXsqnvQByX3qZ_gbSzb8khxgwszHLsGT2_8IxSH55HiPF3OGADy-qio99UtrjejEWO0dss_Uk5ix3xEIcfqlV0tis8amHi5YtnZy_RTlRzsDRseZ',
+douban_id='https://movie.douban.com/subject/26843142/'
+where mc='武林风';
+
+select * from need_repair1_vr where mc like '%男生女生闯天涯%';
+update need_repair1_vr set 
+is_net=0,
+channel='安徽卫视|海南新闻频道',
+baike_id='http://baike.baidu.com/link?url=kwov5-DdpNK7cPhUGyVp4jXRWqQyxCCtfNxsWI6y_Wq4zj1bIqxG582RyXQkXkoNWWb7b9LAF6Zw7Rf3iotPEwqjKMJN4uOHMxlKsQSQSLXfNpT65L6RrlRhD9zr2HreFH01f3q9ERkIRCtZzwIlBk7ricDP651SrRClMNfyZJm'
+where mc='男生女生闯天涯';
+
+select * from need_repair1_vr where mc = '饮食养生汇';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://blog.sina.com.cn/hbtvysysh',
+baike_id='http://baike.baidu.com/link?url=Tj0e7RN_YHuP_d29gOq4TMlDuFePCJQwK8gR6kDzRvIpUsLItPtEEsb5P4FfukgSo6jBuNAM_2qdKrOYTq9u8Lkp5s6Sp8hNDMnBfAM7vYhALWh8bmAIJ2BaP4H9D5lq2hLYBWMYwblRyqhO2ESfFq',
+douban_id='https://movie.douban.com/subject/26789033/'
+where mc='饮食养生汇';
+
+select * from need_repair1_vr where mc = '钱塘老娘舅';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/u/3728972344?is_all=1',
+baike_id='http://baike.baidu.com/link?url=AmMWeA5mjRzfhfLAs1BzVH3jpqmFK8CUrcsKyUjs6p99X3fHOx_rD0wz7MbL0eNPKB60sfYtYu9_bSTNY0U69I6wpM08CnxiKHrAr0szIyt10kvImFR7lFg3_yvOgL7glquMi_AyELiWfvmYfdRClq'
+where mc='钱塘老娘舅';
+
+select * from need_repair1_vr where mc like '花漾梦工厂%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/5806460690?refer_flag=1001600001_&is_hot=1',
+baike_id='http://baike.baidu.com/link?url=Fd8WC9ULNo2dVayWlCayR60ik2R59FVvukSH22-qmksmtqtXl4XBoO9BO8MCbNkbGvUmff43-UjLWTD0Q1XP7MCLlZdqs-WFtj5ZZGYbJg27ZF8fXnSWPag6h3N87s5A7F0qopoTI4_PzTagk9kHfK#1',
+douban_id='https://movie.douban.com/subject/26950613/'
+where mc like '%花漾梦工厂%';
+
+select * from need_repair1_vr where mc = '一呼柏应';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/u/1883276734?is_all=1'
+where mc = '一呼柏应';
+
+select * from need_repair1_vr where mc = '档案';
+
+select * from need_repair1_vr where mc = '传奇故事';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=rmqGoYs6mCdG9RIHgz5Cmv0xUxE5i4VgbxmGLEK_6cx4nQavm4FFpvx-b6p47RpPAAdjhgKi1-H9P2yRxZ9DnD5ovXMPDCeB6hq3RQEd8DfwAZZUVrNgwqbeettmt_xW',
+douban_id='https://movie.douban.com/subject/26331710/'
+where mc='传奇故事';
+
+select * from need_repair1_vr where mc = '下一站幸福';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://www.weibo.com/xingfuzainali2011?is_all=1',
+baike_id='http://baike.baidu.com/item/%E4%B8%8B%E4%B8%80%E7%AB%99%E5%B9%B8%E7%A6%8F/18893776'
+where mc='下一站幸福';
+
+select * from need_repair1_vr where mc = '第一收藏';
+
+select * from need_repair1_vr where mc = '林俊杰国际歌友会出品';
+
+select * from need_repair1_vr where mc like '%星星的礼物%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/5923540701?refer_flag=1005055015_',
+baike_id='http://baike.baidu.com/link?url=d5T5gk7YY_Et3CyeBQlEPbsRJ-p6coj7IThS-0dkBDm819jUpcCZcT6qUgJGHYiqAAyd9M_DeTVqcmaAu6tQOuAu55YhSWTfVlrPNmkkIh1X9tceEO46TduAiNxj0jmS4fQQSA4p_zDLWgg81yren_'
+where mc like '%星星的礼物%';
+
+select * from need_repair1_vr where mc = '有请主角儿';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/youqingzhujue',
+baike_id='http://baike.baidu.com/link?url=PKShlPnVaUYAc2RlvBOblPLI_UsCe3f7akMVk4ZWp_TKAvBBuNOWMcdfjSA0V6Vm4-jLnZUG2m3BGuOdx-3CkiUehWqcLmOamrDl_1D7tyL-ht8LC6HMjSET244LvQ_f'
+where mc='有请主角儿';
+
+select * from need_repair1_vr where mc='笑动2017';
+update need_repair1_vr set
+is_net=0,
+type='语言类'
+where mc='笑动2017';
+
+select * from need_repair1_vr where mc='谁在说';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/shuizaishuowz?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E8%B0%81%E5%9C%A8%E8%AF%B4%E5%AE%98%E6%96%B9%E5%BE%AE%E5%8D%9A&is_hot=1',
+baike_id='http://baike.baidu.com/link?url=Z-dpoFPEq4NpI9F7Xj4ZLC7Z3jQ53ACnPb0bLb2uHAiKpG32XxX7_fXgR3kilgcJ6vcjZcxvpA62oD5zngocxN6hfXm7qv4OOfF8-dcP0ShNoUvZVlBLF219S2ugpyGs',
+douban_id='https://movie.douban.com/subject/26654168/'
+where mc='谁在说';
+
+-- 谁在说（周间版）
+select * from need_repair1_vr where mc like '%周间版%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/shuizaishuowz?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E8%B0%81%E5%9C%A8%E8%AF%B4%E5%AE%98%E6%96%B9%E5%BE%AE%E5%8D%9A&is_hot=1',
+baike_id='http://baike.baidu.com/link?url=Z-dpoFPEq4NpI9F7Xj4ZLC7Z3jQ53ACnPb0bLb2uHAiKpG32XxX7_fXgR3kilgcJ6vcjZcxvpA62oD5zngocxN6hfXm7qv4OOfF8-dcP0ShNoUvZVlBLF219S2ugpyGs',
+douban_id='https://movie.douban.com/subject/26654168/'
+where mc like '%周间版%';
+
+select * from need_repair1_vr where mc like '%一转成双%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/3080927184?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E4%B8%80%E8%BD%AC%E6%88%90%E5%8F%8C&is_hot=1',
+baike_id='http://baike.baidu.com/link?url=08_eK5rYFX9THFeLsoP8aIS5I2D3OaYBX3SUkNPGYI_VQKmUfb_EGE50cZRfppeKU9z1-ry1Oo9Nr8R_9NW8j-q5dVGrbt2RWPoS3g0qE047mcZyVTFPVhzlnHUiI8iI'
+where mc like '%一转成双%';
+
+select * from need_repair1_vr where mc='谢谢你来了';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/5820128792',
+baike_id='http://baike.baidu.com/link?url=RHGw6YL5itjPDBkktwHWzyH9gTXn2M9bZymx8Q7WZ0d5RHFU5-6vsYvUbx40GE4VtJC8IWRQLEcCvebLMwWRbjHZRZbIRnUNNAlxV1hfmmb3UVrnMRjdeTTcSQ6IW-9Rqd90Jvm3hVZJU769yCoiUq'
+where mc='谢谢你来了';
+
+select * from need_repair1_vr where mc='韩流第一线';
+
+select * from need_repair1_vr where mc='微电影之旅';
+
+select * from need_repair1_vr where mc='爱情保卫战';
+
+select * from need_repair1_vr where mc='最佳选择';
+
+select * from need_repair1_vr where mc='暖暖的味道';
+update need_repair1_vr set 
+channel='北京卫视',
+hosts='金于宸|田忻',
+weibo_id='http://weibo.com/u/5745927827',
+douban_id='https://movie.douban.com/subject/26930541/',
+is_net=0
+where mc='暖暖的味道';
+
+select * from need_repair1_vr where mc='金牌调解';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/jinpaitiaojie?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E9%87%91%E7%89%8C%E8%B0%83%E8%A7%A3',
+baike_id='http://baike.baidu.com/link?url=bEi-1zMj0O1LJ3vQSA-Inb5vN4-wDhndsRhpxDawEefG3R1Ke3aM4pbGuE7Bp1Rjv5ZmrT68SYquHYgnniK7BB86FMnxjPWX-bqO3NZAjXaNTrfpuVWabR2oA5e3YW-2',
+douban_id='https://movie.douban.com/subject/25975288/'
+where mc='金牌调解';
+
+select * from need_repair1_vr where mc='相约花戏楼';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=wLH7lVGBrVTLGWecQ00YqVGL-NaUDzvKDOf_sKhmt2_O51G-U5Kg9Z8KN5uSNDvVeg5hIJTuhDQW5rJP90DaPYuZ8nEDAWF9iHAkJdF3IfVNtcn1mYdSRUoAB9mueL0oUd8i_8aIW2VxZBOxidq9r_'
+where mc='相约花戏楼';
+
+select * from need_repair1_vr where mc='今日海峡';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/jrhx?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E4%BB%8A%E6%97%A5%E6%B5%B7%E5%B3%A1',
+baike_id='http://baike.baidu.com/link?url=OX1WEU9VKcArohhPFRcgVVMBAHnvS1ErqDWKTWLkEeu1i8oE_7qkaKh2N3MIoPQcWuet3C74vcR5oQr07iGz4ypfgA6VZXogCbfCt-6mmduL3tzVZTyttOCxXW_xTLas'
+where mc='今日海峡';
+
+select * from need_repair1_vr where mc='朗读者';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/cctvthereader?nick=CCTV%E6%9C%97%E8%AF%BB%E8%80%8',
+baike_id='http://baike.baidu.com/link?url=N4PjSw_kwnCV9N3Gxp4fdHK50QxjBJvB7nkG8tG0OrRipaTbIcAVe6GCDFdxvCo3Y30P6wVThI9CX9zW4uC2KAUAuTP7jMw474BK2zLXvcLxGQV_h6CthxYTDuINShb_'
+where mc='朗读者';
+
+select * from need_repair1_vr where mc='娱乐百分百';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/2408975903?is_hot=1',
+baike_id='http://baike.baidu.com/link?url=HMI3g20xGQgBzu4Sehyqdzp-nQrVJiumLCUiHzuCkagB8cxy0EK_OcGB7Dy9821f8k2e5s7q_pTl25UTYSEzKctbyQAkn287fcMHkPQwQ3MNyn6N9NF3sYdWFHH-03HOnnbjJW1vGMcBng2mUSYQHa',
+douban_id='https://movie.douban.com/subject/26326455/'
+where mc='娱乐百分百';
+
+select * from need_repair1_vr where mc like '%男生女生向前冲%';
+update need_repair1_vr set
+weibo_id='http://weibo.com/nsnsxqc?c=spr_qdhz_bd_baidusmt_weibo_s&nick=男生女生向前冲',
+baike_id='http://baike.baidu.com/item/男生女生向前冲/4617064?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/25878987/',
+is_net=0
+where mc like '%男生女生向前冲%';
+
+select * from need_repair1_vr where mc='每日文娱播报';
+update need_repair1_vr set 
+pdt_com='北京电视台',
+weibo_id='http://weibo.com/mrwybb1?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E6%AF%8F%E6%97%A5%E6%96%87%E5%A8%B1%E6%92%AD%E6%8A%A5' ,
+baike_id='http://baike.baidu.com/item/每日文娱播报?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26653294/'
+where mc='每日文娱播报';
+
+select * from need_repair1_vr where mc like '%星发布%';
+update need_repair1_vr set 
+is_net=1,
+channel='爱奇艺'
+where mc like '%星发布%';
+
+select * from need_repair1_vr where mc like '%王牌对王牌%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/5757599739?refer_flag=1005055013_',
+baike_id='http://baike.baidu.com/link?url=6U48YVsp_4r2ihTiBDu9vwDswQftS6rZMmcGpDBLX3ll70kMgWt9x_JR6wKv4IDY4oPt_6mMHcsokVWRJEiq1iiCy8qcgWAS-doT1AwdQPtINY0LXRhcGsvx8rN1zQyLqQndF9DISPUyPXkbhB8rf6r5jbPvN9guX8Ydum-hyWexQJs_3iAk-ioZL-0rRL41',
+douban_id='https://movie.douban.com/subject/26956708/'
+where mc like '%王牌对王牌%';
+
+select * from need_repair1_vr where mc like '%新歌来了%';
+
+select * from need_repair1_vr where mc like '%詹姆士的厨房%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/cookZ',
+baike_id='http://baike.baidu.com/link?url=VUxJcNm4cWJOXWNePhlHTL-CW2BrtkA2SK-ifJGHwcQISJU6Usg50HhvTMDnqCGg9DgVZCZeD2qULRPHrBSNRosT_w02bVeHV-LG93bILL5GzUjtMgg8fQ3dEL7KNHBu0GYuKPs1tLTKQ2DjQgWLu_'
+where mc='詹姆士的厨房';
+
+select * from need_repair1_vr where mc='家政女皇';
+update need_repair1_vr set 
+pdt_com='河北卫视',
+weibo_id='http://weibo.com/hbwsjznh', 
+baike_id='http://baike.baidu.com/link?url=7DcwX6hxcE9RgTJfZINmB1i6E49KtjKRt0-qFWZCSIrs7b4a72c9hFqL7TrTzki8w_ZGF3hqPSBnh2dg2mUUl4ISbqXebz1cZ4Ip-gbksk6WGbmEnbbQCtqQJFDM7ETl',
+douban_id='https://movie.douban.com/subject/26594176/',
+is_net=0 
+where mc='家政女皇';
+
+select * from need_repair1_vr where mc='跨界冰雪王';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/6084440520',
+baike_id='http://baike.baidu.com/item/%E8%B7%A8%E7%95%8C%E5%86%B0%E9%9B%AA%E7%8E%8B?sefr=cr',
+douban_id='https://movie.douban.com/subject/26883928/'
+where mc='跨界冰雪王';
+
+select * from need_repair1_vr where mc='乡约';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/1749665397',
+baike_id='http://baike.baidu.com/link?url=fSsj12uevDxpzwgt93EgP6PEi2SgIeZkHAcspXqczFWeoZyElWYHz26Xi0k8b62gSNdrgWT5KCzIEFS_uYnQID4BdYTYXjfK-hZl1avTHoS',
+douban_id='https://movie.douban.com/subject/26636318/'
+where mc='乡约';
+
+select * from need_repair1_vr where mc like '%妈妈咪呀%';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/xinyulemamamiya',
+baike_id='http://baike.baidu.com/item/%E5%A6%88%E5%A6%88%E5%92%AA%E5%91%80/17183248',
+douban_id='https://movie.douban.com/subject/26984215/'
+where mc like '%妈妈咪呀%';
+
+select * from need_repair1_vr where mc like '%熟悉的味道%';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/u/5907503673?refer_flag=1005055013_',
+baike_id='http://baike.baidu.com/link?url=NBH7qQzme10D1adsLOxedWrVLy1ndhr--e-wCwGMJVytEtki-2EXhcECOCokKn3-0-xJmif-uz4ssiIbG3Aymg35vugdfyYqIkc1dvFqvayLuW2IFPQuV8EY4--0ouxq3UKYdLpp5rk6IjsCgcmbVq',
+douban_id='https://movie.douban.com/subject/26969039/'
+where mc like '%熟悉的味道%';
+
+select * from need_repair1_vr where mc = '华商启示录';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/cjxzk?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E5%8D%8E%E5%95%86%E5%90%AF%E7%A4%BA%E5%BD%95',
+baike_id='http://baike.baidu.com/link?url=XGCyGgajLA7QK7lcKp-E9gmGctNPKujm6Gek3xurYabTjtsvfgKSWSfWEFVZbxjYt3NfEfIQByZ9G7Vi02zbdOfEnWqllRQdlJ39r0GgaDtggkRnWqgWdJjMEzT4rTcnuFI1wQeXl_UhQjjBEjt6IK'
+where mc='华商启示录';
+
+select * from need_repair1_vr where mc = '深度观察';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/item/深度观察?sefr=sebtn'
+where mc='深度观察';
+
+select * from need_repair1_vr where mc = '岳云鹏相声集锦';
+
+select * from need_repair1_vr where mc = '欢乐中国人';
+
+select * from need_repair1_vr where mc = '东星818';
+
+select * from need_repair1_vr where mc like '放开我北鼻%';
+
+-- select * from need_repair1_vr where mc like '%美丽俏佳人%';
+-- update need_repair1_vr set weibo_id='http://weibo.com/hxxgx',
+-- is_net=0,
+-- pdt_com='东方风行',
+-- weibo_id='http://www.weibo.com/meiliqiaojiaren',
+-- baike_id='http://baike.baidu.com/item/美丽俏佳人/5992303?sefr=sebtn',
+-- douban_id='https://movie.douban.com/subject/26296183/'
+-- where mc like '%美丽俏佳人%';
+//==========================================//
+select * from need_repair1_vr where  mc like '%安徽卫视%';
+update need_repair1_vr set weibo_id='http://weibo.com/hxxgx',
+is_net=0,
+pdt_com='东方风行',
+weibo_id='http://www.weibo.com/meiliqiaojiaren',
+baike_id='http://baike.baidu.com/item/美丽俏佳人/5992303?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26296183/'
+where  mc like '%安徽卫视%';
+//=======================================
+select * from need_repair1_vr where  mc like '%旅游卫视%';
+update need_repair1_vr set weibo_id='http://weibo.com/hxxgx',
+is_net=0,
+pdt_com='',
+weibo_id='http://weibo.com/tcmeiqiao?nick=旅游卫视美丽俏佳人&is_hot=1',
+baike_id='http://baike.baidu.com/item/美丽俏佳人/17612783',
+douban_id=''
+where  mc like '%旅游卫视%';
+
+select * from need_repair1_vr where mc = '娱乐猛回头';
+
+select * from need_repair1_vr where mc like '%选择%';
+update need_repair1_vr set pdt_com='BTV', 
+is_net=0
+where mc like '%选择%';
+
+select * from need_repair1_vr where mc like '%辣妈学院开课啦%';
+
+select * from need_repair1_vr where mc like '%囧闻一箩筐%';
+update need_repair1_vr set 
+weibo_id='', 
+baike_id='',
+douban_id=''
+where mc='家政女皇';
+
+select * from need_repair1_vr where mc like '%放歌中国%';
+
+select * from need_repair1_vr where mc like '%玲听两岸%';
+
+select * from need_repair1_vr where mc like '%小小演说家%';
+
+select * from need_repair1_vr where mc like '%伶人王中王%';
+
+select * from need_repair1_vr where mc like '%瞭望评辨天下%';
+
+select * from need_repair1_vr where mc = '历史其实很有趣';
+
+select * from need_repair1_vr where mc = '大声说出来';
+
+select * from need_repair1_vr where mc = '龙斗之英雄传说';
+
+select * from need_repair1_vr where mc like '%x诊所%';
+select * from need_repair1_vr where mc = 'x诊所';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/u/3963814007', 
+baike_id='http://baike.baidu.com/item/x诊所?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26141914/',
+is_net=0
+where mc like '%x诊所%';
+
+select * from need_repair1_vr where mc = '笑霸来了';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/item/笑霸来了/3643942?sefr=sebtn'
+where mc='笑霸来了';
+
+select * from need_repair1_vr where mc like '出发吧我们%';
+
+select * from need_repair1_vr where mc = '第一书记';
+
+select * from need_repair1_vr where mc = '大爱东方';
+
+select * from need_repair1_vr where mc = '我们试试';
+
+select * from need_repair1_vr where mc = '收藏马未都';
+
+select * from need_repair1_vr where mc = '说天下';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/newstalkshow', 
+baike_id='http://baike.baidu.com/item/说天下?sefr=sebtn'
+where mc='说天下';
+
+select * from need_repair1_vr where mc='家政女皇';
+update need_repair1_vr set 
+pdt_com='河北卫视',
+weibo_id='http://weibo.com/hbwsjznh', 
+baike_id='http://baike.baidu.com/link?url=7DcwX6hxcE9RgTJfZINmB1i6E49KtjKRt0-qFWZCSIrs7b4a72c9hFqL7TrTzki8w_ZGF3hqPSBnh2dg2mUUl4ISbqXebz1cZ4Ip-gbksk6WGbmEnbbQCtqQJFDM7ETl',
+douban_id='https://movie.douban.com/subject/26594176/',
+is_net=0 
+where mc='家政女皇';
+
+select * from need_repair1_vr where mc='梨园春';
+
+select * from need_repair1_vr where mc='时尚美装';
+
+select * from need_repair1_vr where mc='晨光新视界';
+update need_repair1_vr set 
+is_net=0,
+baike_id='http://baike.baidu.com/item/晨光新视界?sefr=sebtn'
+where mc='晨光新视界';
+
+select * from need_repair1_vr where mc='歌手音乐纯享版';
+
+select * from need_repair1_vr where mc='华山论鉴';
+
+select * from need_repair1_vr where mc='大医本草堂';
+update need_repair1_vr set 
+channel='山东卫视',
+is_net=0,
+hosts='吴思嘉',
+baike_id='http://baike.baidu.com/item/大医本草堂?sefr=sebtn'
+where mc='大医本草堂';
+
+select * from need_repair1_vr where mc='今夜有剧毒';
+
+select * from need_repair1_vr where mc='瞭望评辩天下';
+
+select * from need_repair1_vr where mc='算命先生讲故事';
+update need_repair1_vr set 
+channel='爱奇艺',
+weibo_id='http://www.weibo.com/u/5629714359?is_all=1'
+where mc='算命先生讲故事';
+
+select * from need_repair1_vr where mc='丝路新视野';
+
+select * from need_repair1_vr where mc='超级旅行团';
+
+select * from need_repair1_vr where mc='超强音浪';
+
+select * from need_repair1_vr where mc like'%欢乐饭米粒儿%';
+
+select * from need_repair1_vr where mc like '%怪咖啪啪啪%';
+
+select * from need_repair1_vr where mc like '%综艺最看点%';
+update need_repair1_vr set 
+type='资讯|娱乐',
+douban_id='https://movie.douban.com/subject/26727696/'
+where mc like '%综艺最看点%';
+
+select * from need_repair1_vr where mc='坑王驾到';
+
+select * from need_repair1_vr where mc='吐槽大会';
+
+select * from need_repair1_vr where mc like '%哎呀妈呀%';
+update need_repair1_vr set
+is_net=0, 
+baike_id='http://baike.baidu.com/item/哎呀妈呀?sefr=sebtn'
+where mc like '%哎呀妈呀%';
+
+select * from need_repair1_vr where mc='屏行星乐汇';
+
+select * from need_repair1_vr where mc='你消费我买单';
+update need_repair1_vr set 
+is_net=0
+where mc='你消费我买单';
+
+select * from need_repair1_vr where mc='妈妈请放心';
+
+select * from need_repair1_vr where mc='百变女友Reve';
+
+select * from need_repair1_vr where mc='财经郎眼';
+
+select * from need_repair1_vr where mc='法治速览';
+
+select * from need_repair1_vr where mc='危机大调查';
+
+select * from need_repair1_vr where mc='新老娘舅';
+
+select * from need_repair1_vr where mc='都市笑口组';
+update need_repair1_vr set 
+is_net=0,
+hosts='朱晓铮',
+weibo_id='http://weibo.com/dsxkz', 
+baike_id='http://baike.baidu.com/link?url=3L6zdaprQKoE8tpqhRm1KQxCyDPKUM1pGqMSzRcSxZqD0TfHpt3X8Y9-mV5CD4Qdkwg2UsYdp6WMOny8CuW0HEZb-2ntKF6c1ervaiukRfx_vzW7K-RXeZrbptXEOrOkJXfBe2CsexFidmW9tE5Vt_',
+douban_id='https://movie.douban.com/subject/25881540/'
+where mc='都市笑口组';
+
+select * from need_repair1_vr where mc='门当户对';
+
+select * from need_repair1_vr where mc='穿越经典';
+
+select * from need_repair1_vr where mc='谭谈交通';
+update need_repair1_vr set 
+hosts='谭乔',
+is_net=0,
+channel='爱奇艺',
+baike_id='http://baike.baidu.com/link?url=l_yeFmwtFQGFUm0ml_-upaWsm20NhRjwEQQ2eUpCOhsiZG9qPPCTUCnIekYVYMuLkJZYJQJ74XwlAPyevY_fgUrFhYES-qyX5pVG3YVKZW1-DnRWrmvXTt9wNFurCEIO'
+where mc='谭谈交通';
+
+
+select * from need_repair1_vr where mc='北京客';
+update need_repair1_vr set 
+is_net=0,
+baike_id='http://baike.baidu.com/link?url=kO37a-ybsaB5sTyvFjHFo98LEcxZxHbE3-GmAgmJoI4cLNFD8pRwCLHqF-lI_BM20bewEWbymoLlEnwDJZnKTI0qV7lbGvma7dM7fJxWFVoGhcHme5mrHISd3HbW8N4M'
+where mc='北京客';
+
+select * from need_repair1_vr where mc='法治中国60分';
+update need_repair1_vr set
+weibo_id='http://weibo.com/u/5366709099',
+baike_id='http://baike.baidu.com/link?url=kJU08TeeZ7jD6DrCeXbfGAYhlMKs63qKwnDp2k5SQUjiBu-sERfeRhjwb2giQJXJg8Pk4Vwwo28Agd9OadxmcTjxbaUi6Prr1N-4pt0Jb4XEgSgbLDj_pS3_qPxff9g_zdxX-opUgsyDX0bB8FgRpq',
+is_net='0'
+where mc='法治中国60分'
+
+select * from need_repair1_vr where mc='单身日记';
+
+select * from need_repair1_vr where mc='搜天下';
+
+select * from need_repair1_vr where mc='千面英雄';
+
+select * from need_repair1_vr where mc='欢乐冲击波';
+update need_repair1_vr set 
+is_net=0,
+channel='河北卫视'
+where mc='欢乐冲击波';
+
+select * from need_repair1_vr where mc='首发式';
+
+select * from need_repair1_vr where mc='震撼一条龙';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/zhenhanyitiaolong', 
+baike_id='http://baike.baidu.com/link?url=lxFAFBqpNuVqPINSQCaDxqrf6L6HdR6gHOtbD02cEN-2MQmb8D4QBLj4JdEgIDScJc4uqsM7aAx_vkF6Ylndwvd9AWTRyLexyIDOVOoXsShwLmBZwKdq6rGy2Qz3FDLmKUpeAgkn3NMQOBsiuf_sha',
+douban_id='https://movie.douban.com/subject/26717643/'
+where mc='震撼一条龙';
+
+select * from need_repair1_vr where mc='暖暖的新家';
+
+select * from need_repair1_vr where mc='时尚健康';
+
+select * from need_repair1_vr where mc='综艺派';
+update need_repair1_vr set
+is_net=0
+where mc='综艺派';
+
+select * from need_repair1_vr where mc='军晴剧无霸';
+
+select * from need_repair1_vr where mc='SK状元榜';
+
+select * from need_repair1_vr where mc='中国旅游新闻';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/lykjt'
+where mc='中国旅游新闻';
+
+select * from need_repair1_vr where mc='姐姐好饿';
+update need_repair1_vr set 
+pdt_com='爱奇艺',
+channel='爱奇艺' 
+where mc='姐姐好饿';
+update need_repair1_vr set weibo_id='http://www.weibo.com/u/5889503113?is_hot=1',
+baike_id='http://baike.baidu.com/link?url=V6KuuG7qs5iyG29dDFyYMdsDoSeD-XPfUTDbMPGXIEbHcEG8zQnnq2d6DcIa0dq1-51plaB2j3yLSzd_hBIft0a9t1htcm5Vu8EivHN062K2Vq6fg2PWq2wm23i00fMB',
+douban_id='https://movie.douban.com/subject/26760485/?from=tag' where mc='姐姐好饿';
+
+select * from need_repair1_vr where mc='最北京';
+
+select * from need_repair1_vr where mc='相亲相爱';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/nengrenjiadao', 
+baike_id='http://baike.baidu.com/item/%E7%9B%B8%E4%BA%B2%E7%9B%B8%E7%88%B1/2732791'
+where mc='相亲相爱';
+
+select * from need_repair1_vr where mc='家庭幽默录像';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/jtymlx?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E5%AE%B6%E5%BA%AD%E5%B9%BD%E9%BB%98%E5%BD%95%E5%83%8F', 
+baike_id='http://baike.baidu.com/link?url=X1FFOMMwE-1A7HagJ09R4uYvKUX_jNdhm3ZA0fuIbmilQj_TsiTZjxuL5tYleEWRcUYuIIA1kLAcPlVPIKmHxD5QzkGt6bRU-vIwRkHMZF53DGtc0LjtnxayF0aP1ERIMjNlIQ1TSGk2nz7ZdCnVLa',
+douban_id='https://movie.douban.com/subject/26708977/'
+where mc='家庭幽默录像';
+
+select * from need_repair1_vr where mc='吉林卫视欢乐送';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://baike.baidu.com/item/%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86%E6%AC%A2%E4%B9%90%E9%80%81?sefr=cr'
+where mc='吉林卫视欢乐送';
+
+select * from need_repair1_vr where mc='中华好家风';
+
+select * from need_repair1_vr where mc='花美男的健身教室';
+
+select * from need_repair1_vr where mc='欢乐送';
+update need_repair1_vr set 
+is_net=0,
+type='脱口秀',
+baike_id='http://baike.baidu.com/link?url=XF-GLDYHb1KiVT8j0iivNOPDEDM71lFomRXSyBJ-1OB7pr0iJksn5K3CUD3gwkfq4m7Y_JICzTJ1sascjz2pbH8u_Qdd1BdoF8Cpu48h-gGT8U15ALaJAKqaKUmMjw-L&qq-pf-to=pcqq.c2c'
+where mc='欢乐送';
+
+
+select * from need_repair1_vr where mc='我是大美人';
+update need_repair1_vr set 
+pdt_com='上海快乐讯广告传播有限公司',
+is_net=0,
+weibo_id='http://weibo.com/woshidameiren?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E6%88%91%E6%98%AF%E5%A4%A7%E7%BE%8E%E4%BA%BA', 
+baike_id='http://baike.baidu.com/item/%E6%88%91%E6%98%AF%E5%A4%A7%E7%BE%8E%E4%BA%BA/876?sefr=cr',
+douban_id='https://movie.douban.com/subject/26737688/'
+where mc='我是大美人';
+
+select * from need_repair1_vr where mc='中国T台风';
+update need_repair1_vr set 
+is_net=0,
+baike_id='http://baike.baidu.com/link?url=iDninQ3sb_kLnKnrGVfBEbdZgtUVKPH6ZUVjC48491wuZTzz6UfLxzVF9lNurChYr3IxAAbQFYo0BAVTOronkixHJfYPqyYAAjNrWfwq1o9kFqM3FTW5QMmJLctHVkTg'
+where mc='中国T台风';
+
+select * from need_repair1_vr where mc='医生开讲';
+update need_repair1_vr set
+weibo_id='http://weibo.com/zqdf111/profile?rightmod=1&wvr=6&mod=personnumber'
+where mc='医生开讲';
+
+select * from need_repair1_vr where mc='非常向上';
+
+select * from need_repair1_vr where mc='讲开又讲';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=n2WZuJMWGLDzOmg-IJOqltOaVHtGhoBhv5wKzh_mPaRUASGqzYIQkFuWU5n9UevBK9N7pFFVZ12TuPdLfu0fWbsaKG-6uotUvZr7l--trrwhl-obuepfPgyNItti-xhq'
+where mc='讲开又讲';
+
+select * from need_repair1_vr where mc like '%快乐三兄弟%';
+update need_repair1_vr set 
+channel='上海新娱乐',
+is_net=0,
+weibo_id='http://weibo.com/klsxd', 
+baike_id='http://baike.baidu.com/item/%E5%BF%AB%E4%B9%90%E4%B8%89%E5%85%84%E5%BC%9F?sefr=cr'
+where mc='快乐三兄弟';
+
+select * from need_repair1_vr where mc='天天耍大牌';
+update need_repair1_vr set 
+is_net=0,
+hosts='青峰',
+baike_id='http://baike.baidu.com/item/%E5%A4%A9%E5%A4%A9%E8%80%8D%E5%A4%A7%E7%89%8C?sefr=cr'
+where mc='天天耍大牌';
+
+select * from need_repair1_vr where mc='幽默观察家';
+
+select * from need_repair1_vr where mc='真实故事';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/tvsstory?zw=news', 
+baike_id='http://baike.baidu.com/item/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B/3331474?sefr=cr',
+pdt_com='广东南方电视台经济频道'
+where mc='真实故事';
+
+select * from need_repair1_vr where mc='搜狐视频综艺饭';
+
+select * from need_repair1_vr where mc='美女酒量';
+
+select * from need_repair1_vr where mc='精彩老朋友';
+
+select * from need_repair1_vr where mc='搜狐视频娱乐播报2016年第1季';
+
+select * from need_repair1_vr where mc='鲁豫有约';
+update need_repair1_vr set 
+pdt_com='香港凤凰卫视',
+weibo_id='http://weibo.com/luyuyouyue?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E9%B2%81%E8%B1%AB%E6%9C%89%E7%BA%A6', 
+baike_id='http://baike.baidu.com/link?url=cmB9KHQqjJiw3kdDN5WAfOyHJ45g09bc9TdADzYmo9jQ676eSQ2usMKzWPFX-Cwwee5ierwgBaE580RUD-56zElXKkWi2FtppjdBzlf3BFvq0gv4byhxHOtD_qYnYIxk',
+douban_id='https://movie.douban.com/subject/25949777/'
+where mc='鲁豫有约';
+
+select * from need_repair1_vr where mc='汉字解密';
+update need_repair1_vr set 
+is_net=0,
+channel='湖北卫视',
+weibo_id='http://weibo.com/u/3105521675?c=spr_qdhz_bd_baidusmt_weibo_s&nick=汉字解密&is_hot=1'
+where mc='汉字解密';
+
+select * from need_repair1_vr where mc='杂志天下';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/magachina', 
+baike_id='http://baike.baidu.com/item/%E6%9D%82%E5%BF%97%E5%A4%A9%E4%B8%8B?sefr=cr',
+douban_id='https://movie.douban.com/subject/26301682/'
+where mc='杂志天下';
+
+select * from need_repair1_vr where mc='健康第一';
+update need_repair1_vr set 
+is_net=0,
+pdt_com='重庆电视台',
+hosts='刘航',
+type='健康|资讯',
+baike_id='http://baike.baidu.com/item/%E5%81%A5%E5%BA%B7%E7%AC%AC%E4%B8%80?sefr=cr'
+where mc='健康第一';
+
+select * from need_repair1_vr where mc='魅惑摄影';
+update need_repair1_vr set 
+is_net=0,
+baike_id='http://baike.baidu.com/link?url=qtQb22_xlL34BW4Jg2lqn7P5ODkPgXnyBEaPvDSWKEpQD7FUpkbAC-yvQBzY23NKdv9UYEKHby3qHZD0GPmQEvVFl_IT0exGMS06nFTTdZz9vb7egl4Mx0w5udQUAhNd'
+where mc='魅惑摄影';
+
+select * from need_repair1_vr where mc='小强来了';
+
+select * from need_repair1_vr where mc='综艺最前线';
+
+select * from need_repair1_vr where mc='娱乐星天地';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/u/3375423350?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E5%A8%B1%E4%B9%90%E6%98%9F%E5%A4%A9%E5%9C%B0', 
+baike_id='http://baike.baidu.com/item/%E5%A8%B1%E4%B9%90%E6%98%9F%E5%A4%A9%E5%9C%B0?sefr=cr',
+douban_id='https://movie.douban.com/subject/26654148/'
+where mc='娱乐星天地';
+
+select * from need_repair1_vr where mc='我爱返寻味';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/tvsyummy', 
+baike_id='http://baike.baidu.com/item/%E6%88%91%E7%88%B1%E8%BF%94%E5%AF%BB%E5%91%B3?sefr=cr'
+where mc='我爱返寻味';
+
+select * from need_repair1_vr where mc='风情热装';
+
+select * from need_repair1_vr where mc='欧美综艺劲爆点';
+
+select * from need_repair1_vr where mc='快乐星挑战';
+
+select * from need_repair1_vr where mc='现场说法';
+update need_repair1_vr set 
+hosts='徐滔|王旭',
+weibo_id='http://weibo.com/xianchangshuofa', 
+baike_id='http://baike.baidu.com/item/%E7%8E%B0%E5%9C%BA%E8%AF%B4%E6%B3%95?sefr=cr'
+where mc='现场说法';
+
+select * from need_repair1_vr where mc='一站到底';
+
+select * from need_repair1_vr where mc='粤韵风华';
+
+select * from need_repair1_vr where mc='关爱八卦成长协会';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/ohmygossip', 
+baike_id='http://baike.baidu.com/link?url=gm-n7Gx2px6P14QYR1rbFHW7E2xNAYeZ-rJFVpVfVr1csttm7qFYXYFqv2cyD-BYuc0MWM0bIYAIal1jd5-JyTqjs7vrefdZftaHJhuzJvRkDd6rI87OF9hv3GWE2N7YISg90gdUP7VdheLLj_-evs_2udg6ODs19_eGgHkX7uVohoHqGGM2F2FhaUKAB1WH'
+where mc='关爱八卦成长协会';
+
+select * from need_repair1_vr where mc='天下寻宝';
+
+select * from need_repair1_vr where mc='奔跑吧小鹿';
+
+select * from need_repair1_vr where mc='我爱我家';
+
+select * from need_repair1_vr where mc='记忆2016';
+update need_repair1_vr set 
+is_net=0
+where mc='记忆2016';
+
+select * from need_repair1_vr where mc='人气美食';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/renqimeishi', 
+baike_id='http://baike.baidu.com/item/%E4%BA%BA%E6%B0%94%E7%BE%8E%E9%A3%9F/19670911',
+douban_id='https://movie.douban.com/subject/26596165/'
+where mc='人气美食';
+
+select * from need_repair1_vr where mc='网紫来了';
+
+select * from need_repair1_vr where mc='这事儿芸知道';
+
+select * from need_repair1_vr where mc='我爱我车';
+
+select * from need_repair1_vr where mc='唐唐脱口秀';
+
+select * from need_repair1_vr where mc='陈辰全民星';
+update need_repair1_vr set 
+is_net=0,
+weibo_id='http://weibo.com/u/2896852060', 
+baike_id='http://baike.baidu.com/item/%E9%99%88%E8%BE%B0%E5%85%A8%E6%B0%91%E6%98%9F?sefr=cr',
+douban_id='https://movie.douban.com/subject/26918992/'
+where mc='陈辰全民星';
+
+select * from need_repair1_vr where mc='相亲才会赢';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/xqwin520?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E7%9B%B8%E4%BA%B2%E6%89%8D%E4%BC%9A%E8%B5%A2', 
+baike_id='http://baike.baidu.com/item/%E7%9B%B8%E4%BA%B2%E6%89%8D%E4%BC%9A%E8%B5%A2?sefr=cr'
+where mc='相亲才会赢';
+
+
+select * from need_repair1_vr where mc='艾伦秀-深度追';
+
+select * from need_repair1_vr where mc='调查';
+update need_repair1_vr set 
+hosts='薛猛',
+weibo_id='http://weibo.com/u/2527086413'
+where mc='调查';
+
+select * from need_repair1_vr where mc='耍大牌';
+update need_repair1_vr set
+hosts='史正涵',
+is_net=0
+where mc='耍大牌';
+
+
+select * from need_repair1_vr where mc='记忆';
+
+select * from need_repair1_vr where mc='天方晏谈';
+
+select * from need_repair1_vr where mc='欢天戏地';
+
+select * from need_repair1_vr where mc='壹起去旅行';
+
+select * from need_repair1_vr where mc='大揭秘';
+update need_repair1_vr set
+is_net=0, 
+baike_id='http://baike.baidu.com/item/大揭秘?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26666905'
+where mc='大揭秘';
+
+select * from need_repair1_vr where mc='艾伦秀第14季';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/item/艾伦秀?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26969253/'
+where mc='艾伦秀第14季';
+
+select * from need_repair1_vr where mc='中国减灾';
+
+select * from need_repair1_vr where mc='欧美流行';
+update need_repair1_vr set
+is_net=0
+where mc='欧美流行';
+
+select * from need_repair1_vr where mc='发哥怪谈';
+
+select * from need_repair1_vr where mc='今天我相亲';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/link?url=swjChMlkUeoHTTkpyjCa17dZ0Uq4St9BQvIPM6mtmsSmxodaI24pXKYnJozReMh3wasKHPou2ovfQhs5p760w4SVRSl9gRJiLs_AhBvpW7nFiEu6kjJxbf1Uf3sgwL6PoZH2dRfPh88VtEXUpONmp_',
+is_net=0 
+where mc='今天我相亲';
+
+select * from need_repair1_vr where mc='喜乐汇';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/u/5776222724', 
+baike_id='http://baike.baidu.com/item/综艺喜乐汇/7843695?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26850627/'
+where mc='喜乐汇';
+
+select * from need_repair1_vr where mc='生活广角';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/shgj?is_hot=1', 
+baike_id='http://baike.baidu.com/item/生活广角?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26654169/'
+where mc='生活广角';
+
+select * from need_repair1_vr where mc='娱乐乐翻天';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/yllft', 
+baike_id='http://baike.baidu.com/item/娱乐乐翻天?sefr=sebtn'
+where mc='娱乐乐翻天';
+
+select * from need_repair1_vr where mc='法治最前线';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/fzzqx',
+baike_id='http://baike.baidu.com/item/法治最前线?sefr=sebtn',
+is_net=0 
+where mc='法治最前线';
+
+select * from need_repair1_vr where mc='靓妆直播间';
+
+select * from need_repair1_vr where mc='非你莫属';
+update need_repair1_vr set 
+weibo_id='http://weibo.com/fnms?from=feed&loc=at&nick=非你莫属',
+baike_id='http://baike.baidu.com/item/非你莫属/2747061?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/25962998/',
+is_net=0 
+where mc='非你莫属';
+
+select * from need_repair1_vr where mc='Oh My思密达';
+update need_repair1_vr set  
+type='评论',
+baike_id='http://baike.baidu.com/item/Oh%20My思密达?sefr=sebtn'
+where mc='Oh My思密达';
+
+select * from need_repair1_vr where mc='城事特搜';
+update need_repair1_vr set 
+baike_id='http://baike.baidu.com/item/城事特搜?sefr=sebtn'
+where mc='城事特搜';
+
+select * from need_repair1_vr where mc like '闪亮的爸爸%';
+
+select * from need_repair1_vr where mc='综艺最爆点';
+
+select * from need_repair1_vr where mc='书香北京';
+
+select * from need_repair1_vr where mc='拜托了妈妈';
+
+select * from need_repair1_vr where mc='瓣嘴';
+
+select * from need_repair1_vr where mc='我爱看歌手';
+
+select * from need_repair1_vr where mc='有料';
+update need_repair1_vr set
+type='资讯',
+baike_id='http://baike.baidu.com/item/有料/13869253?sefr=sebtn'
+where mc='有料';
+
+select * from need_repair1_vr where mc='纪录广西';
+
+select * from need_repair1_vr where mc='哎呦你真美';
+
+select * from need_repair1_vr where mc='闻香识女人';
+update need_repair1_vr set 
+is_net=0
+where mc='闻香识女人';
+
+select * from need_repair1_vr where mc='快乐生活一点通';
+update need_repair1_vr set 
+type='美食|生活',
+is_net=0,
+pdt_com='北京电视台生活节目中心|银汉传播',
+weibo_id='http://weibo.com/klshydt?is_all=1', 
+baike_id='http://baike.baidu.com/item/快乐生活一点通/10576205?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26292752/'
+where mc='快乐生活一点通';
+update need_repair1_vr set
+hosts='王芳|秦天'
+where mc='快乐生活一点通';
+
+select * from need_repair1_vr where mc='新娱乐在线';
+update need_repair1_vr set 
+pdt_com='上海东方传媒集团',
+channel='东方电视台娱乐频道',
+weibo_id='http://www.weibo.com/xinyulezaixian', 
+baike_id='http://baike.baidu.com/item/新娱乐在线?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26643327/'
+where mc='新娱乐在线';
+
+select * from need_repair1_vr where mc like '%非常幽默%';
+update need_repair1_vr set 
+is_net='0'
+where mc = '非常幽默'
+
+select * from need_repair1_vr where mc='对外英语节目精选';
+update need_repair1_vr set
+is_net=0,
+channel='北京国际频道'
+where mc='对外英语节目精选';
+
+select * from need_repair1_vr where mc like '%超级家庭%';
+
+select * from need_repair1_vr where mc='经典传奇';
+update need_repair1_vr set 
+is_net=0,
+baike_id='http://baike.baidu.com/item/经典传奇?sefr=sebtn'
+where mc='经典传奇';
+
+select * from need_repair1_vr where mc='韩剧星天地';
+
+select * from need_repair1_vr where mc='帕帕帮';
+
+select * from need_repair1_vr where mc='旅行的声音';
+
+select * from need_repair1_vr where mc='育儿大师';
+
+select * from need_repair1_vr where mc like '%综艺麻辣烫%';
+
+select * from need_repair1_vr where mc like '%新闻大求真%';
+update need_repair1_vr set 
+weibo_id='http://www.weibo.com/u/2746136993', 
+baike_id='http://baike.baidu.com/item/新闻大求真?sefr=sebtn',
+douban_id=''
+where mc like '%新闻大求真%';
+
+select * from need_repair1_vr where mc like '%大王小王%';
+update need_repair1_vr set
+pdt_com='北京佳视王芳文化传播工作室',
+weibo_id='http://weibo.com/dwangxwang',
+baike_id='http://baike.baidu.com/item/大王小王?sefr=sebtn',
+douban_id='https://movie.douban.com/subject/26865350/',
+is_net=0
+where mc like '%大王小王%';
+
+select * from need_repair1_vr where mc='一周好莱坞';
+
+select * from need_repair1_vr where mc='晚晴';
+
+select * from need_repair1_vr where mc='中国艺考';
+
+
+
+
+
+
+
+
+select * from need_repair1_vr where mc = '七彩飘香';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

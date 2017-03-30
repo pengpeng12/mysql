@@ -46,6 +46,33 @@
      
      
      
+     -------- -------- -------- -------- -------- -------- -------- --------
+     
+     //mysql 语句
+     
+     create database 数据库名字;
+     show databases;
+     
+     create database dbName default character set utf8; --指定默认字符集
+     show create database dbName; --查看数据库的字符集
+     alter database dbName default character set gbk; -- 改变数据库的字符集为gbk编码
+     
+     drop database dbName;--删除数据库
+     
+     ///////
+     use dbName;
+     show tables;
+     
+     create table tbName(
+     id int,
+     name varchar(20),
+     age int
+     );
+     
+     desc tbName; --查看表
+     
+     drop table tbName; --删除表
+     
      
      
      
