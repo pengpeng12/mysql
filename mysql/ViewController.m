@@ -91,6 +91,7 @@
      //修改表名
         alter table 旧表名 rename to 新表名;
      比如：alter table student rename to teacher;
+
      
      
      
