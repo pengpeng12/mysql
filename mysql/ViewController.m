@@ -98,9 +98,31 @@
      比如：alter table student rename to teacher;
 
      
+     //增加数据
+     --插入所有字段，依次按顺序插入
+     insert into tbName values(1,'张三'，'男'，20);
+     --插入部分字段
+     insert into tbName(id,name) values(2,'李四');
+     //查询
+     select * from tbName;
      
+     --1.2修改数据
+     update tbName set gender='女'; --修改所有的数据（建议少用）
+     //带条件的修改（推荐使用）
+     update tbName set gender='女' where id=1;
+     //修改多个字段 注意：set 字段名=值,字段名=值,... 
+     update TBName set gender='女',age=20 where id=2;
      
+     --1.3删除数据
+     //删除所有数据（慎重使用）(--delete- 1.可以带条件的删除  2.不能删除表的约束)
+     delete from tbname;
+     //带条件的删除（推荐使用）
+     delete form tbName where id=2;
+     --另一种方式 删除所有数据（慎重使用）
+     truncate table tbName;(--truncate- 1.不能带条件的删除，只能用于删除表中所有数据 2.可以删除表的约束）
      
+     //主键
+     primary key auto_increment(自增长约束，一般跟在id属性后面)
      
      
      */
