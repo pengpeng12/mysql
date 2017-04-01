@@ -57,6 +57,11 @@
      show create database dbName; --查看数据库的字符集
      alter database dbName default character set gbk; -- 改变数据库的字符集为gbk编码
      
+     //---查看表与修改表的编码方式语句与改变数据库的一样
+     show create table tbName;
+     alter table tbName default character set utf8; --这句不包括里面的字段
+     alter table tbName convert to character set utf8; --这句会把表里面的字段编码也一起改了(建议使用这句)
+     
      drop database dbName;--删除数据库
      
      ///////
