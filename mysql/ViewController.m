@@ -247,6 +247,10 @@
      constraint emlyee_dept_fk foreing key(deptId) references dept(id) on update cascade on delete cascade
      
      2.数据库设计（表设计）
+     三大范式：
+     第一：表的每个字段必须是不可分割的独立单元
+     第二：在第一的基础上，每张表只表达一个意思，表的每个字段都和表的主键有依赖
+     第三：在第二的基础上，每张表的主键之外的其他字段都和主键有直接依赖关系
      
      3.存储过程
      
@@ -260,9 +264,20 @@
      
      
      
-     ------ 基于多张表查询--------------------
-     
-     
+     ------ 基于多张表查询------关联查询-------------
+     需求：查询员工及其所在部门
+         1.交叉连接查询（产生笛卡尔乘积现象，有重复问题）
+         select empName,deptName from employee,dept;
+     --多表查询规则：1）确定查询那些表 2）确定哪些字段 3）表与表之间连接条件
+         2.内连接查询
+     select empName,deptName                --2)确定哪些字段
+            from employee,dept              --1)确定查询哪些表
+            where employee.deptId=dept.id   --3)表与表之间的连接条件 n张表就有n-1个连接条件
+     内连接的另一种语法
+     select empName,deptName
+            from employee
+            innet join dept
+            on employee.deptId=dept.id;
      
      */
 
