@@ -134,21 +134,21 @@
      
      2.查询指定列-- select id,name from tbName;
      
-     查询时指定别名-- select id as '编号',name as '姓名' from tbName as s01;(多表查询时会用到）
+     3.查询时指定别名-- select id as '编号',name as '姓名' from tbName as s01;(多表查询时会用到）
      
-     3.查询时添加常量列
+     4.查询时添加常量列
      需求：在查询student表时添加一个班级列，内容为‘java班’
      select id,name,gender,age,'java班' as '班级' from student;
      
-     4.查询时和并列(只能合并数值类型的字段）
+     5.查询时和并列(只能合并数值类型的字段）
      //查询每个学生的servlet 和 jsp 的总成绩
      select id,name,(servlet+jsp) as '总成绩' from student;
      
-     5.查询时去除重复记录
+     6.查询时去除重复记录
      select distinct age from student; 作为关键字
      select distinct(age) from student;另一种语法作为函数
      
-     6.条件查询(where)
+     7.条件查询(where)
          1.逻辑条件：and(与) or(或)
             需求：查询id为2，且姓名为李四的学生
               select * from student where id=2 and name='李四';
@@ -167,19 +167,101 @@
      
      
      
-         3.判空条件（null 空字符串）：is null / is not null / =='' /<>''
+         3.判空条件（null 空字符串）：is null / is not null / ='' /<>''
+         -- 需求：查询adress 为空的学生
+         -- null:表示没有值
+         -- 空字符串:是有值的
+         select * from student where address is null;
+         select * from student where address='';
+         //综合
+         select * from student where address is null or address='';
+         -- 需求：查询有地址的学生
+         select * from student where address is not null and address<>'';
      
          4.模糊条件 like
+         -- 需求：查询姓‘张’的学生
+         select * from student where sname like '张%';
+         -- 需求：查询姓‘李’且姓名只有两个字的学生
+         select * from student WHERE sname like '李_';
      
-     7.聚合查询
-     8.分页查询
-     9.查询排序
-     10.分组查询
-     11.分组查询后筛选
+     8.聚合查询
+         常用的聚合函数：sum() avg() max() min() count()
+         需求：查询学生的servlet总成绩
+         select sum(servlet) as 'servlet的总成绩' from student;
+         需求：查询学生的servlet平均分
+         select avg(servlet) as 'servlet的平均分' from student;
+         需求：查询学生的servlet最高分
+         select max(servlet) as 'servlet最高分' from student;
+         需求：查询学生的servlet最低分
+         select min(servlet) as 'servlet最低分' from student;
+         需求：统计学生的数量（count(字段)）
+         select count(*) from student;
+         select count(sid) from student;
+         //注意：count() 会忽略掉null的数据,所以表的id一般不能为空,用来统计数据。
+         select count(address) from student;
+     
+     9.分页查询 （limit 起始行，查询几行）
+         --需求：查询第1，2条记录
+         select * from student limit 0,2;
+         --需求：查询第3，4条记录
+         select * from student limit 2,2;
+     
+     10.查询排序(order by)
+         语法：order by 字段 asc/desc;
+         //正序--也是默认的排序
+         select * from student order by sid;
+         select * from student order by sid asc;
+         //反序
+         select * from student order by sid desc;
+         注意：多个排序条件
+         需求：按照servlet正序，jsp的倒序排列
+         select * from student order by servlet asc , jsp desc;
+     
+     11.分组查询 (group by)
+         需求：查询男女的人数
+         select gender,count(*) from student group by gender;
+     
+     12.分组查询后筛选 有group by 后面不能再用where 要用having
+         需求：查询总人数大于20的性别
+         select gender,count(*) from student (这里还可以再用where加条件) group by gender having count(*)>20;
+     -------------------------------------------------------------------------------------------------------------------------------------------------
+     1.数据约束
+     not null / unique -唯一(对null不起作用)
+      primary key --主键
+     //自增长约束
+      auto_increment
+     例如：id int primary key auto_increment;
+          id int(4) zerofill primary key auto_increment;--自增长，从0开始，zerofill用0填充
+     //外键(foreing key(外键) references 参考表名(参考字段))：--两张表的约束
+     员工表与部门表(需求：--员工表的deptId字段添加外键约束)
+     constraint emlyee_dept_fk foreing key(deptId) references dept(id)
+     --          外键名称                    外键               参考表(参考字段)
+     注意：1.被约束的表称为副表，约束别人的表称为主表，外键设置在副表上的！
+          2.主表的参考字段通用为主键！
+          3.添加数据顺序先加主表，再加副表
+          4.修改数据时先修改副表，再改主表
+          5.删除数据时先删除副表，再删主表 
+     
+     //级联修改(修改) - 删除
+     --需求直接修改部门,员工表数据跟着改变---on update cascade / on delete casecade
+     constraint emlyee_dept_fk foreing key(deptId) references dept(id) on update cascade on delete cascade
+     
+     2.数据库设计（表设计）
+     
+     3.存储过程
+     
+     4.触发器
+     
+     5.mysql权限问题
      
      
      
-     ------ 基于多张表查询
+     
+     
+     
+     
+     ------ 基于多张表查询--------------------
+     
      
      
      */
