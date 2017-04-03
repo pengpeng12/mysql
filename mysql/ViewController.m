@@ -252,13 +252,170 @@
      第二：在第一的基础上，每张表只表达一个意思，表的每个字段都和表的主键有依赖
      第三：在第二的基础上，每张表的主键之外的其他字段都和主键有直接依赖关系
      
-     3.存储过程
+     3.存储过程 :带有逻辑的sql语句
+     -- 声明结束符
+     delimiter $
+     -- 创建存储过程
+     create procedure pro_test()
+     begin
+            --可以写多个sql语句+流程控制
+            select * from student;
+     end $
+     -- 执行存储过程
+     call pro_test();
      
-     4.触发器
+     参数：
+     ---- in：表示输入参数，可以携带数据带存储过程中
+         --需求：传入一个员工id，查询员工信息
+         delimiter $
+         create procedure pro_findById(in eid int)
+         begin
+         select * from student where sid = eid;
+         end $
+         -- 调用
+         call pro_findById(2);
+     
+     
+     ******* mysql的变量 ********
+     1. 全局变量（内置变量）：mysql数据库内置的变量
+     -- 查看所有全局变量： show variables
+     -- show variables like 'character_%';
+     -- 查看某个全局变量： select @@character_set_client;
+     -- 修改编码： set 变量名=utf8;
+     character_set_client :mysql服务器的接收数据的编码
+     character_set_results :mysql服务器输出数据的编码
+     character_set_client :mysql服务器的接收数据的编码
+     character_set_results :mysql服务器输出数据的编码
+     2. 会话变量：只存在当前客户端与服务器端的一次连接当中，如果连接断开，那么会话变量全部丢失。
+     定义会话变量： set @变量=值
+     查看会话变量： select @变量
+     3. 局部变量：在存储过程中使用的变量就叫局部变量。只要存储过程执行完毕，局部变量就丢失
+     
+     
+     ---- out：表示输出参数，可以从存储过程中返回结果
+         delimiter $
+         create procedure pro_testOut(out str varchar(20))
+         begin
+         -- 	给参数赋值
+         set str='这是一个输出参数';
+         end $
+         -- 定义一个会话变量
+         set @name='eric';
+         SELECT @name;
+         -- 定义一个会话变量name 并且使用name会话变量接收存储过程的返回值
+         call pro_testOut(@name);
+     
+     ---- inout：表示输入输出参数，既可以输入，也可以输出
+         delimiter $
+         create procedure pro_testInOut(inout n int)
+         begin
+         -- 查看局部变量
+         select n;
+         set n = 500;
+         end $
+         -- 调用
+         set @n=10;
+         call pro_testInOut(@n);
+         select @n;
+     
+     
+     
+     -- --------带有条件判断的存储过程
+     -- 需求：输入一个整数，如果1，则返回“星期一”，如果2，返回“星期二”，如果3，返回“星期三”，其他数字，返回错误
+     delimiter $
+     create procedure pro_testIf(in num int, out str varchar(20))
+     begin
+     if num = 1 then
+     set str='星期一';
+     elseif num = 2 then
+     set str='星期二';
+     elseif num = 3 then
+     set str='星期三';
+     else
+     set str='输入错误';
+     end if;
+     end $
+     call pro_testIf(3,@week);
+     select @week;
+     
+     
+     -- --------带有循环的存储过程
+     -- 需求：输入一个整数，求和
+     delimiter $
+     create procedure pro_testWhile(in num int , out result int)
+     begin
+     -- 	定义一个局部变量
+     declare i int default 1;
+     declare vsum int default 0;
+     while i<=num do
+     set vsum = vsum + i;
+     set i = i + 1;
+     end while;
+     set result = vsum;
+     end $
+     call pro_testWhile(100, @sumstr);
+     select @sumstr;
+     
+     -- -------- 使用查询的结果作为返回值 into
+     delimiter $
+     create procedure pro_findById2(in eid int , out vname varchar(20))
+     begin
+     select sname into vname from student where sid = eid;
+     end $
+     call pro_findById2(1,@result);
+     select @result;
+     
+     
+     -- ******** 4.触发器 ********
+     select *from student;
+     -- 日志表
+     create table test_log(
+     id int primary key auto_increment,
+     content varchar(100)
+     )
+     -- 需求：当向student表插入数据时，希望mysql自动同时往日志表插入数据
+     -- 创建触发器(添加)
+     create trigger tri_studentAdd after insert on student for each row
+     insert into test_log(content) values('学生表插入了一条数据');
+     -- 插入数据
+     insert into student (sid ,sname, age) values(16,'蓝古扎',1000);
+     select * from test_log;
+     
+     -- 创建触发器(修改)
+     create trigger tri_studentUpdate after update on student for each row
+     insert into test_log(content) values('学生表修改了一条数据');
+     -- 修改数据
+     update student set sname='蓝古扎1' where sid=16;
+     select * from test_log;
+     
+     -- 创建触发器(删除)
+     create trigger tri_studentDelete after delete on student for each row
+     insert into test_log(content) values('学生表删除了一条数据');
+     -- 删除数据
+     delete from student where sid = 12;
+     select * from test_log;
+     
+     
      
      5.mysql权限问题
-     
-     
+     root :拥有所有权限
+     --权限账户，只拥有部分权限（crud）例如：只能操作某个数据库的某张表
+     --如何修改mysql的用户密码
+     --password： md5加密函数（单项加密）
+     select password('root'); --*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B
+     -- mysql数据表,用户配置：user表
+     use mysql;
+     select * from user;
+     -- 修改密码
+     update user set authentication_string=password('123456') where user='root';
+     -- 分配权限账户
+     grant select on day01.student to 'songpengpeng'@'localhost' identified by '123456';
+     grant delete on day01.employee to 'songpengpeng'@'localhost' identified by '123456';
+     ------****** 数据库备份 ********
+     在终端直接输入，不需要在mysql里面输
+     mysqldump -u root -p day01 > /Users/apple/Desktop/day01.sql
+     数据库还原：建一个空的数据库day01
+     mysql -u root -p day01 < /Users/apple/Desktop/day01.sql
      
      
      
@@ -278,7 +435,43 @@
             from employee
             innet join dept
             on employee.deptId=dept.id;
+     使用别名
+     select empName,deptName
+            from employee as e
+            innet join dept as d
+            on e.deptId = d.id;
+     省略as的写法
+     select e.empName,d.deptName
+            from employee e
+            innet join dept d
+            on e.deptId = d.id;
      
+     ---需求：查询每个部门的员工
+     select d.deptName,e.empName
+     from dept d,employee e
+     where d.id = e.deptId;
+     如果用这样的内连接查询，部门员工为null的就会不显示--不符合需求
+     这里要用：
+     --左外连接查询：null的情况也会显示
+     select d.deptName,e.empName
+            from dept d
+            left outer join employee e
+            on d.id=e.deptId;
+     --右外连接查询
+     select d.deptName,e.empName
+     from employee e
+     right outer join dept d
+     on d.id=e.deptId;
+     
+     两种写法执行结果是相同的，outer也可以省略不写。
+     
+     ----2.4 自连接查询---
+     一个员工表中有员工id和bossId
+     需求：查询员工及其上司
+     select e.employee,b.empName
+            from employee e
+            left outer join employee b
+            on e.bossId=b.id;
      */
 
 }
