@@ -127,6 +127,17 @@
      //主键
      primary key auto_increment(自增长约束，一般跟在id属性后面)
      
+        //增加表的字段
+        //String sql = "alter table student add servlet int,add jsp int,add address varchar(50)";
+        //修改列名
+        //String sql = "alter table student change sage age int";
+        //把sid字段设置为主键
+		//String sql = "alter table student add constraint primary key(sid)";
+        //把sid字段设置为自增的主键（需要先删除）
+        //String sql = "alter table student drop column sid";
+        //String sql = "alter table student add sid int primary key auto_increment";
+        //改变字段在表中的位置	
+        String sql ="alter table student modify sid int auto_increment first";
      
      
      -------查询数据（重点）--基于一张表
