@@ -293,10 +293,13 @@
      -- show variables like 'character_%';
      -- 查看某个全局变量： select @@character_set_client;
      -- 修改编码： set 变量名=utf8;
-     character_set_client :mysql服务器的接收数据的编码
-     character_set_results :mysql服务器输出数据的编码
-     character_set_client :mysql服务器的接收数据的编码
-     character_set_results :mysql服务器输出数据的编码
+     character_set_client :客户端使用的编码
+     character_set_results :mysql服务器输出数据的编码(查询返回的结果集的编码)
+     character_set_connection :连接使用的编码
+     character_set_set_filesystem :把os上文件名转化成此字符集，默认binary是不做任何转换的
+     character_set_server :数据库服务器的默认字符集                                                  |
+     character_set_system :这个值总是utf8，不需要设置，是为存储系统元数据的字符集
+
      2. 会话变量：只存在当前客户端与服务器端的一次连接当中，如果连接断开，那么会话变量全部丢失。
      定义会话变量： set @变量=值
      查看会话变量： select @变量
